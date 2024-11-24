@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flask App - Login</title>
-</head>
-<body>
-    <h1>Welcome to the Flask App</h1>
-    <a href="{{ url_for('login') }}">Login</a>
-</body>
-</html>
+{% include 'header.html' %}
+
+<section class="hero">
+    <h1>Welcome to Your Secure Home</h1>
+    <p>Advanced Facial Recognition Technology for Ultimate Security.</p>
+    <div class="cta-buttons">
+        <a href="{{ url_for('login') }}" class="btn primary">Sign In</a>
+        <a href="{{ url_for('signup') }}" class="btn secondary">Sign Up</a>
+    </div>
+</section>
+
+
+{% include 'footer.html' %}
